@@ -9,7 +9,7 @@ namespace R5T.T0145
     [DataTypeMarker]
     public class RemoteServerConnectionSet
     {
-        public Dictionary<string, RemoteServerConnection> RemoteServerConnectionsByFriendlyName { get; } = new();
-        public Dictionary<string, UserAuthentication> UserAuthenticationsByFriendlyName { get; } = new();
+        public Dictionary<string, RemoteServerConnection> RemoteServerConnectionsByFriendlyName { get; } = new Dictionary<string, RemoteServerConnection>();
+        public Dictionary<string, UserAuthentication> UserAuthenticationsByFriendlyName { get; } = new Dictionary<string, UserAuthentication>();
     }
 }
